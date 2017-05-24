@@ -21,13 +21,10 @@ except IOError:
 try:
     man_out = open('man_data.txt', 'w')
     other_out = open('other_data.txt', 'w')
-
     print(man, file=man_out)
     print(other, file=other_out)
-
-    man_out.close()
-    other_out.close()
 except IOError:
     print('an error occured writing files')
-#print(man)
-#print(other)
+finally:
+    man_out.close()
+    other_out.close()
