@@ -1,3 +1,5 @@
+import nested
+import sys
 man = []
 other = []
 data = open('sketch.txt')
@@ -29,7 +31,7 @@ except IOError:
 #     man_out.close()
 #     other_out.close()
 with open('man_data.txt', 'w') as man_out, open('other_data.txt', 'w') as other_out:
-    print(man, file=man_out)
-    print(other, file=other_out)
+    nested.print_lol(man, man_out)
+    nested.print_lol(other, other_out)
 
 

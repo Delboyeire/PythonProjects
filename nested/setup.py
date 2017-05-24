@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
 name = 'nested',
-version = '1.4.0',
+version = '1.4.1',
 py_modules = ['nested'],
 author = 'DerekReilly',
 author_email = 'derekr31@hotmail.com',

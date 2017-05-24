@@ -1,5 +1,7 @@
 """this is the nested.py module which contains one function
 called print_lol which print lists which may or may contain nested lists"""
+import sys
+
 
 def print_lol(the_list,indent=False, level=0, fh=sys.stdout):
     """This function takes a positional argument called “the_list", which is any
