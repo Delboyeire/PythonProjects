@@ -18,13 +18,18 @@ try:
     data.close()
 except IOError:
     print("An error occurred with the file, does the file exist?")
-try:
-    man_out = open('man_data.txt', 'w')
-    other_out = open('other_data.txt', 'w')
+# try:
+#     man_out = open('man_data.txt', 'w')
+#     other_out = open('other_data.txt', 'w')
+#     print(man, file=man_out)
+#     print(other, file=other_out)
+# except IOError:
+#     print('an error occured writing files')
+# finally:
+#     man_out.close()
+#     other_out.close()
+with open('man_data.txt', 'w') as man_out, open('other_data.txt', 'w') as other_out:
     print(man, file=man_out)
     print(other, file=other_out)
-except IOError:
-    print('an error occured writing files')
-finally:
-    man_out.close()
-    other_out.close()
+
+
