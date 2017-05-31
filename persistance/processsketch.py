@@ -1,5 +1,5 @@
 import nested
-import sys
+import pickle
 man = []
 other = []
 data = open('sketch.txt')
@@ -30,8 +30,8 @@ except IOError:
 # finally:
 #     man_out.close()
 #     other_out.close()
-with open('man_data.txt', 'w') as man_out, open('other_data.txt', 'w') as other_out:
-    nested.print_lol(man, man_out)
-    nested.print_lol(other, other_out)
+with open('man_data.txt', 'wb') as man_out, open('other_data.txt', 'wb') as other_out:
+    pickle.dump(man, man_out)
+    pickle.dump(other, other_out)
 
 

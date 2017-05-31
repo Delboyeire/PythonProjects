@@ -3,7 +3,7 @@ called print_lol which print lists which may or may contain nested lists"""
 import sys
 
 
-def print_lol(the_list,indent=False, level=0, fh=sys.stdout):
+def print_lol(the_list, indent=False, level=0, fh=sys.stdout):
     """This function takes a positional argument called “the_list", which is any
     Python list (of, possibly, nested lists). Each data item in the provided list
     is (recursively) printed to the screen on its own line.A second arguement called 
